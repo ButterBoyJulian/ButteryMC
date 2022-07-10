@@ -1,0 +1,94 @@
+:root {
+	--textcolor: #343434;
+	--backgroundcolor: #dedede;
+	--containercolor: #ffffff;
+}
+
+html, body {
+	height: 100%;
+}
+body {
+	background-color: var(--backgroundcolor);
+	font-family: Arial, Helvetica, sans-serif;
+	min-height: 100vh;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	background-color: var(--containercolor);
+	font-size: 16.5px;
+	color: var(--textcolor);
+	font-family: 'noto sans', sans-serif;
+	border-radius: 16px;
+	box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.2);
+	padding: 20px;
+	margin: 40px 8%;
+	flex: 1;
+}
+
+/* Generic styles */
+.link {
+	color: #0062f4;
+	text-decoration: none;
+}
+.link:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.center {
+	color: inherit;
+	text-align: center;
+}
+
+.heading {
+	margin-top: 24px;
+	margin-bottom: 16px;
+}
+
+code {
+	font-family: 'Fira Code', monospace;
+	font-size: 14px;
+	background-color: #fafafa;
+	border: 1px solid #ccc;
+	padding: 4px;
+	border-radius: 4px;
+	display: inline-block;
+}
+
+/* Text formatting styles */
+.bold {
+	font-weight: bold;
+}
+.italicize {
+	font-style: italic;
+}
+.underline {
+	text-decoration: underline;
+}
+.strikethrough {
+	text-decoration: line-through;
+}
+
+/* Fonts */
+.times-new-roman {
+	font-family: "Times New Roman", Times, serif;
+}
+.arial {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Apply color scheme */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--textcolor: #cccccc;
+		--backgroundcolor: #212121;
+		--containercolor: #1b1b1b;
+	}
+	code {
+		background-color: #050505;
+		border: 1px solid #333333;
+	}
+}

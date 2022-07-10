@@ -1,0 +1,29 @@
+#navbar {
+	display: flex;
+	flex-direction: row;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	background-color: #2e2e2e;
+	font-family: 'Cabin', sans-serif;
+}
+
+.navitem {
+	transition-duration: 0.3s;
+	text-align: center;
+	margin: 0px 10px;
+	padding: 16px;
+}
+.navitem a {
+	color: #ffffff;
+	font-size: 18px;
+	text-decoration: none;
+}
+.navitem a:hover {
+	color: #6e9bf5;
+}
+.navitem a.active {
+	color: #6ef582;
+	border-radius: 16px;
+	transition-duration: 0.6s;
+}

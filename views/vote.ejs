@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ButteryMC • Vote</title>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="/style.css"/>
+		<link rel="stylesheet" type="text/css" href="/navbar.css"/>
+		<link rel="stylesheet" type="text/css" href="/footer.css"/>
+		<style>
+			.vote-buttons {
+				display: flex;
+				flex-direction: row;
+				gap: 12px;
+				flex-wrap: wrap;
+			}
+			.vote-button {
+				color: #ffffff;
+				padding: 12px 16px;
+				border-radius: 8px;
+				border: none;
+				cursor: pointer;
+
+				font-family: 'Montserrat', sans-serif;
+				font-weight: bold;
+				font-size: 14px;
+
+				transition-duration: 0.4s;
+				background: #5252A9;
+				box-shadow: 1px 1px 6px #5252a9;
+			}
+			.vote-button:hover {
+				background: #6363c2;
+				box-shadow: 1px 1px 6px #6363c2;
+			}
+			.vote-button:focus {
+				background: #50b650;
+				box-shadow: 1px 1px 6px #50b650;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<%- include("navbar.ejs") %>
+		
+		<div class="container">
+			<h2 class="heading">Server Voting Links:</h2>
+
+			<div class="vote-buttons">
+				<button class="vote-button" title="minecraft-mp.com" onclick="window.open('https://minecraft-mp.com/server/186619/vote/')">Vote 1</button>
+				<button class="vote-button" title="minecraft-server-list.com" onclick="window.open('https://minecraft-server-list.com/server/428838/vote/')">Vote 2</button>
+				<button class="vote-button" title="topminecraftservers.org" onclick="window.open('https://topminecraftservers.org/vote/3920/')">Vote 3</button>
+				<button class="vote-button" title="minecraft-server.net" onclick="window.open('https://minecraft-server.net/vote/JulianNetwork/')">Vote 4</button>
+				<button class="vote-button" title="minecraftservers.org" onclick="window.open('https://minecraftservers.org/vote/574672')">Vote 5</button>
+				<button class="vote-button" title="minecraftservers.biz" onclick="window.open('https://minecraftservers.biz/servers/74286/')">Vote 6</button>
+				<button class="vote-button" title="topg.org" onclick="window.open('https://topg.org/Minecraft/in-609684')">Vote 7</button>
+				<button class="vote-button" title="trackyserver.com" onclick="window.open('https://www.trackyserver.com/server/566786')">Vote 8</button>
+				<button class="vote-button" title="mclist.io" onclick="window.open('https://mclist.io/server/32124/vote')">Vote 9</button>
+			</div>
+
+			<h2 class="heading">Voting Rewards:</h2>
+			<p>Absolutly nothing at the moment.</p>
+
+			<h2 class="heading">Server Description:</h2>
+			<p>ButteryMC is a small server home to several minigames you can play with your friends and game modes like creative and survival!</p>
+		</div>
+		
+		<%- include("footer.ejs") %>
+	</body>
+</html>

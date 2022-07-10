@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>ButteryMC</title>
+		<meta charset="utf-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="/style.css"/>
+		<link rel="stylesheet" type="text/css" href="/navbar.css"/>
+		<link rel="stylesheet" type="text/css" href="/footer.css"/>
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/jellee-typeface" type="text/css"/>
+		<meta name="description" content="Welcome to ButteryMC! ButteryMC is a Minecraft server with several minigames plus creative and survival for both Java and Bedrock editions."/>
+		<style>
+			#heading {
+				color: white;
+				text-align: center;
+				font-family: 'JelleeRoman';
+				font-weight: normal;
+				font-size: 120px;
+				line-height: 1000px;
+				margin: 0px;
+			}
+			#banner {
+				background-image: url('/images/banner-2022-05.png');
+				zoom: 0.40;
+				background-position: center; 
+				background-size: cover;
+			}
+		</style>
+	</head>
+	<body>
+		<section id="banner">
+			<h1 id="heading">Welcome to the ButteryMC!</h1>
+		</section>
+
+		<%- include("navbar.ejs") %>
+
+		<div class="container" style="padding-bottom: 500px;">
+			<p>Welcome to the Official ButteryMC Website</p>
+			<p>Where some stuff happens...</p>
+		</div>
+
+		<%- include("footer.ejs") %>
+	</body>
+</html>

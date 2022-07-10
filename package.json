@@ -1,0 +1,16 @@
+{
+  "name": "butterymc",
+  "version": "1.0.0",
+  "description": "The official ButteryMC website",
+  "main": "server.js",
+  "scripts": {
+    "start": "npm install && node server.js",
+    "dev": "nodemon server.js -e js,json,ejs,html,css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}
