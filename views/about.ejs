@@ -8,6 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="/style.css"/>
 		<link rel="stylesheet" type="text/css" href="/navbar.css"/>
 		<link rel="stylesheet" type="text/css" href="/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="/discord-embed.css"/>
 		<style>
 			.join-server {
 				display: flex;
@@ -92,7 +93,7 @@
 
 			<p>Join our lovely Discord server by clicking <a class="link" href="/discord">here</a> and view our Discord leaderboards over <a class="link" href="/discord/leaderboard">here</a>.</p>
 
-			<iframe src="https://discordapp.com/widget?id=379794049080623126&theme=dark" height="500" allowtransparency="true" frameborder="0"></iframe>
+			<%- include("discord-embed.ejs") %>
 		</div>
 		
 		<%- include("footer.ejs") %>

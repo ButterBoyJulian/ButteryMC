@@ -1,0 +1,17 @@
+<a class="discord-container" href="/discord" target="_blank">
+    <object class="discord-icon" type="image/svg+xml" data="/assets/discord-icon-white.svg"></object>
+    <div class="discord-text">
+        <small>Discord - <span id="discord-online-count">...</span> Online</small>
+        <h1>Come Hangout With Us!</h1>
+    </div>
+</a>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    axios.get("https://discord.com/api/guilds/379794049080623126/widget.json").then(response => {
+        var count = document.getElementById("discord-online-count");
+        count.innerHTML = response.data.presence_count;
+	}).catch(error => {
+        var count = document.getElementById("discord-online-count");
+        count.innerHTML = "???";
+	});
+</script>
